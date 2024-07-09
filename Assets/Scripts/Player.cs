@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
 {
     private Rigidbody2D rigidbody;
     private float Speed = 10f;
-    private float JumpForce = 2f;
+    private float JumpForce = 7f;
     void Start()
     {
         rigidbody = GetComponent<Rigidbody2D>();
@@ -22,7 +22,7 @@ public class Player : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            Velocity = new Vector2(rigidbody.velocityX, rigidbody.velocityY * JumpForce);
+            Velocity = new Vector2(rigidbody.velocityX, rigidbody.velocityY + JumpForce);
         }
         else
         {

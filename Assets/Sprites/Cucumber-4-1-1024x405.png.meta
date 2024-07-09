@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 4f0054dd1f09b18479fba48c0e8f76eb
+guid: baf96a92c9d75eb4f9fcaf86118d5ec3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6989642852348889387
-    second: images-removebg-preview_0
+      213: 3815309882607288162
+    second: Cucumber-4-1-1024x405_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 700
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: images-removebg-preview_0
+      name: Cucumber-4-1-1024x405_0
       rect:
         serializedVersion: 2
-        x: 10
-        y: 0
-        width: 208
-        height: 225
+        x: 51
+        y: 82
+        width: 909
+        height: 254
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b298a193423300160800000000000000
-      internalID: 6989642852348889387
+      spriteID: 26f38d4bf14b2f430800000000000000
+      internalID: 3815309882607288162
       vertices: []
       indices: 
       edges: []
@@ -131,7 +131,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      images-removebg-preview_0: 6989642852348889387
+      Cucumber-4-1-1024x405_0: 3815309882607288162
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
