@@ -24,6 +24,7 @@ public class Cucumber : MonoBehaviour
         }
         else if (collision.gameObject.name == "player" && PrevSpeed != Speed) {
             GetComponent<AudioSource>().Play();
+            collision.gameObject.GetComponent<PlayerHealth>().GetDamage(1);
             PrevSpeed = Speed;
         }
     }

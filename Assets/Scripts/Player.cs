@@ -1,4 +1,3 @@
-using Mono.Cecil.Cil;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -22,11 +21,11 @@ public class Player : MonoBehaviour
 
         if(Input.GetKeyDown(KeyCode.Space))
         {
-            Velocity = new Vector2(rigidbody.velocityX, rigidbody.velocityY + JumpForce);
+            Velocity = new Vector2(rigidbody.velocity.x, rigidbody.velocity.y + JumpForce);
         }
         else
         {
-            Velocity = new Vector2(horizontal * Speed, rigidbody.velocityY);
+            Velocity = new Vector2(horizontal * Speed, rigidbody.velocity.y);
         }
 
         rigidbody.velocity = Velocity;
