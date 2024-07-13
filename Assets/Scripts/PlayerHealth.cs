@@ -14,7 +14,13 @@ public class PlayerHealth : MonoBehaviour
         {
             health -= damage;
             transform.position = spawnPoint.position;
-            text.text = health + ""; 
+            text.text = health + "";
+
+            GameObject cucumber = GameObject.Find("Cucumber");
+            cucumber.GetComponent<Cucumber>().restart();
+            
+            GameObject player = GameObject.Find("player");
+            player.GetComponent<Player>().restart();
         }
         else
         {
