@@ -1,11 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.Threading;
 using UnityEngine;
-using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public static Player instance;
+
+    [SerializeField]  private int scoreKitkat = 0;
+    [SerializeField] private Text scoreText;
+
     private Rigidbody2D rigidbody;
     private float Speed = 10f;
     private float JumpForce = 7f;
@@ -16,24 +19,23 @@ public class Player : MonoBehaviour
 
     private float cooldown = 1.0f;
 
-    public void restart()
-    {
-        cooldown = 1.0f;
-    }
+    public void restart() => cooldown = 1.0f;
 
-    void Start()
+    private void Start()
     {
+        instance = this;
+        AddScore(0);
         rigidbody = GetComponent<Rigidbody2D>();
     }
 
-    void unpauseCucumber()
+    private void unpauseCucumber()
     {
         GameObject cucumber = GameObject.Find("Cucumber");
         cucumber.GetComponent<Cucumber>().unpause();
     }
 
 
-    void Update()
+    private void Update()
     {
         if(cooldown > 0.0f)
         {
@@ -81,6 +83,15 @@ public class Player : MonoBehaviour
         if (any_input)
         {
             unpauseCucumber();
+        }
+    }
+
+    public void AddScore(int score)
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            scoreKitkat += score;
+            scoreText.text = $"{scoreKitkat}";
         }
     }
 }

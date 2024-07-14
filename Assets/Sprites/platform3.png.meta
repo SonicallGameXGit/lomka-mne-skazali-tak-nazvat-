@@ -6,7 +6,7 @@ TextureImporter:
       213: 4893984239976900325
     second: platform3_0
   externalObjects: {}
-  serializedVersion: 13
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      platform3_0: 4893984239976900325
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

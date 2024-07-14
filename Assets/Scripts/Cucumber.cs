@@ -34,7 +34,7 @@ public class Cucumber : MonoBehaviour
         isPaused = false; 
     }
 
-    void updateProgress()
+    private void updateProgress()
     {
         move_progress = Mathf.Min(move_progress + Time.deltaTime * Speed * speedMultipler, 1.0f);
         if(move_progress >= 1.0f)
@@ -51,7 +51,7 @@ public class Cucumber : MonoBehaviour
         rigidBody.position = (1.0f - a) * start_pos + a * target;
     }
 
-    void changeTarget()
+    private void changeTarget()
     {
         float random = Random.value;
         start_pos = rigidBody.position;
@@ -75,7 +75,7 @@ public class Cucumber : MonoBehaviour
         }
     }
 
-    void resetEventTimer()
+    private void resetEventTimer()
     {
         eventTimer = minSpeedMultipler + 0.5f;
     }
@@ -92,13 +92,13 @@ public class Cucumber : MonoBehaviour
         move_progress = 0.0f;
     }
 
-    void Start()
+    private void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
         restart();
     }
 
-    void Update()
+    private void Update()
     {
         if (isPaused) return;
 
@@ -126,7 +126,7 @@ public class Cucumber : MonoBehaviour
         updateProgress();
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (isPaused) return;
 
