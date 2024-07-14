@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Die
   - Win
+  - fire_in_the_hole
+  - pad
   layers:
   - Default
   - TransparentFX
