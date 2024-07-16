@@ -2099,6 +2099,7 @@ GameObject:
   - component: {fileID: 1236244432}
   - component: {fileID: 1236244431}
   - component: {fileID: 1236244434}
+  - component: {fileID: 1236244436}
   - component: {fileID: 1236244435}
   m_Layer: 0
   m_Name: Main Camera
@@ -2239,6 +2240,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 287475017}
   followSpeed: 6
+--- !u!114 &1236244436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1236244430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e36aaecd1984eaf4b864cf4c7ed2b487, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1261099570
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,9 +2336,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1261099575}
-        m_TargetAssemblyTypeName: Restart, Assembly-CSharp
-        m_MethodName: restart
+      - m_Target: {fileID: 1236244436}
+        m_TargetAssemblyTypeName: menu, Assembly-CSharp
+        m_MethodName: Intro
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
