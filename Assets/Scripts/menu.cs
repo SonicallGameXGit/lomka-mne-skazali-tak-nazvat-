@@ -12,6 +12,7 @@ public class menu : MonoBehaviour
     public void Intro()
     {
         SceneManager.LoadScene(1);
+        Time.timeScale = 1f;
     }
     public void Boss()
     {

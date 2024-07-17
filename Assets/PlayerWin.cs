@@ -7,7 +7,7 @@ public class PlayerWin : MonoBehaviour
     {
         if (collision.CompareTag("Win"))
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 }

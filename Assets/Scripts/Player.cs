@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rigidbody;
     private float Speed = 10f;
-    private float JumpForce = 7f;
+    private float JumpForce = 8.5f;
     private uint maxJumps = 2;
     private uint remainingJumps = 2;
     private float jumpReloadTime = 3f;
@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     private void unpauseCucumber()
     {
         GameObject cucumber = GameObject.Find("Cucumber");
+        if (cucumber != null)
         cucumber.GetComponent<Cucumber>().unpause();
     }
 
